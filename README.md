@@ -1,8 +1,12 @@
 # A/B Testing Analysis Project
 
+![Python](https://img.shields.io/badge/Python-3.14-blue)
+
 ## Project Overview
 This project demonstrates a complete A/B testing workflow using Python and Pandas.  
-It simulates an online experiment with 8,000 users split into **Group A** and **Group B**, analyzing conversion rates and determining statistical significance.
+It simulates an online experiment with **8,000 users** split into **Group A** and **Group B**, analyzing conversion rates and determining statistical significance.
+
+---
 
 ## Objectives
 - Simulate A/B test dataset
@@ -11,6 +15,8 @@ It simulates an online experiment with 8,000 users split into **Group A** and **
 - Conduct statistical hypothesis testing (Z-test)
 - Visualize results for clear interpretation
 
+---
+
 ## Tools & Libraries
 - Python 3.14  
 - Pandas  
@@ -18,27 +24,37 @@ It simulates an online experiment with 8,000 users split into **Group A** and **
 - Statsmodels  
 - Matplotlib  
 
+---
+
 ## Dataset
 - `ab_test_data.csv` contains 8,000 simulated user records  
 - Columns:
-  - `user_id` → unique user ID
-  - `group` → A/B test group
-  - `converted` → 1 = converted, 0 = did not convert
+  - `user_id` → unique user ID  
+  - `group` → A/B test group  
+  - `converted` → 1 = converted, 0 = did not convert  
 
-## Analysis
-- Conversion Rate:
-  - Group A: 13.0%
-  - Group B: 12.6%
-- Hypothesis Testing (Z-test):
-  - Z-statistic: 0.5225
-  - P-value: 0.6013
-  - Conclusion: No significant difference between groups
+---
+
+## Analysis & Results
+- **Conversion Rate:**  
+  - Group A: 13.0%  
+  - Group B: 12.6%  
+- **Hypothesis Testing (Z-test):**  
+  - Z-statistic: 0.5225  
+  - P-value: 0.6013  
+  - Conclusion: No significant difference between groups  
+
+---
 
 ## Visualization
-![Conversion Rates](screenshots/conversion_chart.png)
+![Conversion Rates](screenshots/conversion_chart.png)  
+- Group A is **blue**, Group B is **orange**  
+- Bar chart shows conversion rates clearly  
+
+---
 
 ## How to Run
-1. Clone the repo  
-2. Install required libraries:
+1. Clone the repository:
+
 ```bash
-python -m pip install pandas numpy statsmodels matplotlib
+git clone https://github.com/Harshu2326/AB_Test_Project.git
