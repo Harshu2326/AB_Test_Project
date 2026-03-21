@@ -2,6 +2,10 @@
 
 ![Python](https://img.shields.io/badge/Python-3.14-blue)
 
+**Skills:** Data Analysis, Python, Pandas, Matplotlib, Statsmodels, A/B Testing
+
+---
+
 ## Project Overview
 This project demonstrates a complete A/B testing workflow using Python and Pandas.  
 It simulates an online experiment with **8,000 users** split into **Group A** and **Group B**, analyzing conversion rates and determining statistical significance.
@@ -42,7 +46,7 @@ It simulates an online experiment with **8,000 users** split into **Group A** an
 - **Hypothesis Testing (Z-test):**  
   - Z-statistic: 0.5225  
   - P-value: 0.6013  
-  - Conclusion: No significant difference between groups  
+  - **Conclusion:** No significant difference between groups  
 
 ---
 
