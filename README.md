@@ -51,7 +51,7 @@ It simulates an online experiment with **8,000 users** split into **Group A** an
 ---
 
 ## Visualization
-![Conversion Rates](!(conversion_chart.png)
+![Conversion Rates](conversion_chart.png)
 - Group A is **blue**, Group B is **orange**  
 - Bar chart shows conversion rates clearly  
 
