@@ -1,2 +1,44 @@
-# AB_Test_Project
-Analyze conversion rates between two groups using A/B testing. Includes data simulation, statistical testing, and visualization with Python, Pandas, and Matplotlib.
+# A/B Testing Analysis Project
+
+## Project Overview
+This project demonstrates a complete A/B testing workflow using Python and Pandas.  
+It simulates an online experiment with 8,000 users split into **Group A** and **Group B**, analyzing conversion rates and determining statistical significance.
+
+## Objectives
+- Simulate A/B test dataset
+- Perform data cleaning and exploration
+- Calculate conversion rates for each group
+- Conduct statistical hypothesis testing (Z-test)
+- Visualize results for clear interpretation
+
+## Tools & Libraries
+- Python 3.14  
+- Pandas  
+- NumPy  
+- Statsmodels  
+- Matplotlib  
+
+## Dataset
+- `ab_test_data.csv` contains 8,000 simulated user records  
+- Columns:
+  - `user_id` → unique user ID
+  - `group` → A/B test group
+  - `converted` → 1 = converted, 0 = did not convert
+
+## Analysis
+- Conversion Rate:
+  - Group A: 13.0%
+  - Group B: 12.6%
+- Hypothesis Testing (Z-test):
+  - Z-statistic: 0.5225
+  - P-value: 0.6013
+  - Conclusion: No significant difference between groups
+
+## Visualization
+![Conversion Rates](screenshots/conversion_chart.png)
+
+## How to Run
+1. Clone the repo  
+2. Install required libraries:
+```bash
+python -m pip install pandas numpy statsmodels matplotlib
