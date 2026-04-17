@@ -1,64 +1,105 @@
-# A/B Testing Analysis Project
+# 🧪 A/B Testing for Conversion Optimization
 
 ![Python](https://img.shields.io/badge/Python-3.14-blue)
-
-**Skills:** Data Analysis, Python, Pandas, Matplotlib, Statsmodels, A/B Testing
-
----
-
-## Project Overview
-This project demonstrates a complete A/B testing workflow using Python and Pandas.  
-It simulates an online experiment with **8,000 users** split into **Group A** and **Group B**, analyzing conversion rates and determining statistical significance.
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+![Type](https://img.shields.io/badge/Type-Data%20Analysis-orange)
 
 ---
 
-## Objectives
-- Simulate A/B test dataset
-- Perform data cleaning and exploration
-- Calculate conversion rates for each group
-- Conduct statistical hypothesis testing (Z-test)
-- Visualize results for clear interpretation
+## 📌 Business Problem
+A product team aims to improve conversion rates on a landing page. Two versions of the page — **Variant A (Control)** and **Variant B (New Design)** — are tested to determine which version drives better user conversions.
 
 ---
 
-## Tools & Libraries
-- Python 3.14  
-- Pandas  
-- NumPy  
-- Statsmodels  
-- Matplotlib  
+## 🎯 Objective
+To evaluate whether **Variant B significantly improves conversion rates** compared to Variant A using statistical hypothesis testing and data-driven analysis.
 
 ---
 
-## Dataset
-- `ab_test_data.csv` contains 8,000 simulated user records  
-- Columns:
-  - `user_id` → unique user ID  
+## 📊 Dataset
+- Simulated dataset with **8,000 users**
+- Split into:
+  - **Group A (Control)**
+  - **Group B (Variant)**
+- Features:
+  - `user_id` → Unique identifier  
   - `group` → A/B test group  
-  - `converted` → 1 = converted, 0 = did not convert  
+  - `converted` → Conversion outcome (1 = Yes, 0 = No)
 
 ---
 
-## Analysis & Results
-- **Conversion Rate:**  
-  - Group A: 13.0%  
-  - Group B: 12.6%  
-- **Hypothesis Testing (Z-test):**  
-  - Z-statistic: 0.5225  
-  - P-value: 0.6013  
-  - **Conclusion:** No significant difference between groups  
+## 🧠 Methodology
+
+### 1️⃣ Data Cleaning & Validation
+- Checked for missing/null values  
+- Verified equal distribution across groups  
+- Ensured data consistency  
 
 ---
 
-## Visualization
+### 2️⃣ Exploratory Data Analysis (EDA)
+- Calculated conversion rates for each group  
+- Compared user behavior across variants  
+- Visualized results using bar charts  
+
+---
+
+### 3️⃣ Hypothesis Testing
+
+**Statistical Test Used:** Z-test for proportions  
+
+#### Hypotheses:
+- **H₀ (Null Hypothesis):** No difference in conversion rates  
+- **H₁ (Alternative Hypothesis):** Variant B improves conversion rate  
+
+---
+
+## 📈 Results
+
+| Metric              | Group A | Group B |
+|--------------------|--------|--------|
+| Conversion Rate    | 13.0%  | 12.6%  |
+
+- **Z-statistic:** 0.5225  
+- **P-value:** 0.6013  
+
+👉 **Conclusion:** No statistically significant difference between the two groups  
+
+---
+
+## 💡 Key Insights
+
+- Variant B does **not outperform** Variant A  
+- Observed difference is **statistically insignificant**  
+- UI/UX changes in Variant B **do not meaningfully impact conversions**  
+
+---
+
+## 🚀 Business Recommendations
+
+- ❌ Do NOT implement Variant B  
+- ✅ Retain existing version (Variant A)  
+- 🔄 Test alternative design or feature changes  
+- 📊 Consider increasing sample size for future experiments  
+
+---
+
+## 📊 Visualization
+
 ![Conversion Rates](conversion_chart.png)
-- Group A is **blue**, Group B is **orange**  
-- Bar chart shows conversion rates clearly  
+
+- Bar chart comparing conversion rates  
+- Shows minimal variation between groups  
 
 ---
 
-## How to Run
-1. Clone the repository:
+## 🛠️ Tech Stack
 
-```bash
-git clone https://github.com/Harshu2326/AB_Test_Project.git
+- **Language:** Python  
+- **Libraries:** Pandas, NumPy, Statsmodels, Matplotlib  
+- **Concepts:** A/B Testing, Hypothesis Testing, Data Analysis, Visualization  
+
+---
+
+## 📂 Project Structure
+
